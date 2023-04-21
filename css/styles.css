@@ -438,12 +438,11 @@ footer address{
 .what-we-do-text{
     font-size: 14px;
         line-height: 1.14;
+        font-weight: 700;
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-    
         color: var(--what-we-do-color);
-
 }
 
 .our-team{
@@ -582,11 +581,12 @@ footer address{
 
 /* ===== modal ===== */
 
-.close-svg{
+.close-svg {
     fill: #000000;
 }
 
-.modal-bg{
+.modal-bg {
+    z-index: 10;
     position: fixed;
     left: 0;
     top: 0;
@@ -596,7 +596,7 @@ footer address{
     transition: opacity 500ms linear, visibility 500ms linear;
 }
 
-.modal-window{
+.modal-window {
     position: absolute;
     width: 528px;
     height: 582px;
@@ -606,7 +606,7 @@ footer address{
     background-color: #FFFFFF;
 }
 
-.close-modal{
+.close-modal {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -621,7 +621,7 @@ footer address{
     cursor: pointer;
 }
 
-.modal-bg.is-hidden{
+.modal-bg.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
