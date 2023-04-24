@@ -603,7 +603,11 @@ footer address{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+
+    transform-origin: 50% 50%;
     background-color: #FFFFFF;
+    transition: opacity 500ms linear, visibility 500ms linear, transform 500ms linear;
 }
 
 .close-modal {
@@ -625,6 +629,11 @@ footer address{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.modal-bg.is-hidden > .modal-window{
+    transform: translate(-50%, -50%) scale(0.9);
+    
 }
 
 
